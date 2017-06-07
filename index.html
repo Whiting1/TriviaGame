@@ -4,26 +4,102 @@
 <head>
     <meta charset="utf-8">
     <title>World's Greatest Trivia Challenge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <h1> Totally Trivia </h1>
-        <div id="questionArea"></div>
-         <p id="question"></p>
-         <div class="radioButtons">
-            <input type="radio" onclick="" id="myRadio">
-            <input type="radio" onclick="" id="myRadio">
-            <input type="radio" onclick="" id="myRadio">
-            <input type="radio" onclick="" id="myRadio">
+  <div class="container">
+    <div id=title>
+    <h1> Totally Trivia </h1>
+    </div>
+      <div id="gameArea">
+
+      <button id="startClock">start</button>
+
+        <div>
+        <h2>Time Remaining:<span id="timeRem"></span><h2>
+        
+        </div>
+
+        <div id="quesAns">
+         <p>1) What country has the largest land mass?</p>
          </div>
+          <div class="radioButtons">
+            <form id="quesOne">
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="10"/> Russia</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Australia</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Brazil</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Canada</label>
+            </form>
+          <br>
+         <p>2) What ingredient in bread causes it to rise?</p>
+          <div class="radioButtons">
+            <form id="quesTwo">
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Gluten</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Sugar</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="10"/> Yeast</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Wheat</label>
+            </form>
+          <br>
+         <p>3) Who is the only athlete ever to play in a Super Bowl and a World Series?</p>
+          <div class="radioButtons">
+            <form id="quesThree">
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Michael Jordan</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Bo Jackson</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Chad Hutchinson</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="10"/> Deion Sanders</label>
+            </form>
+            <br>
+         <p>4) The Chihuahua is a breed of dog believed to originate from what country?</p>
+          <div class="radioButtons">
+            <form  id="quesFour">
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Peru</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="10"/> Mexico</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> China</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> United States</label>
+            </form>
+            <br>
+         <p>5) According to Guiness World Records, which author has the most published works?</p>
+          <div class="radioButtons">
+            <form id="quesFive">
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Mary Harper</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Charles Dickens</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Stephen King</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="10"/> L. Ron Hubbard</label>
+            </form>
+            <br>
+          <p>6) Which psychologist investigated obedience using electric shocks?</p>
+          <div class="radioButtons">
+            <form  id="queSix">
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Ramsey Glaceau</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Geoffrey Schnoover</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="10"/> Stanley Milgram</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Francis Dartz</label>
+            </form>
+            <br>
+         <p>7) Who played the female lead role in the 1986 sci-fi movie "Aliens"?</p>
+          <div class="radioButtons">
+            <form id="quesSeven">
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Nicole Kidman</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="10"/> Sigourney Weaver</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Kim Basinger</label>
+            <label><input class="calc" name="v1" type="radio" onclick="ver2(this);" value="0"/> Michelle Pfeiffer</label>
+            </form>
+
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <input type="text" name="openingsum">​
+
     </div>
 
-
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 
